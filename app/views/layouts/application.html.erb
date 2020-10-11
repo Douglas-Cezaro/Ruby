@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teste</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <link rel="stylesheet" href="https://railsgirls.com/assets/bootstrap.css">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/">App test</a>
+      <ul class="nav">
+        <li class="active"><a href="/ideas">Teste</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  <div class="container">
+    <%= yield %>
+  </div>
+</body>
+</html>
